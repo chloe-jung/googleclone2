@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Google</title>
+    <script defer src="https://kit.fontawesome.com/66fd1dbf65.js" crossorigin="anonymous">
+    </script>
+
+    <style>
+  
+    
+* {
+    box-sizing: border-box;
+}
+   body {
+        line-height: 1;
+        font: 300 16px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+/* 상단 오른쪽 메뉴 */
+
+
+
+      .navi {
+        text-align:right;
+        margin-right: 10px;
+        margin-top: 20px;
+      }
+
+     span a {
+        color:black;
+        text-decoration: none;
+        font-size:14px;
+        margin: 20px 10px 0  10px;
+      }
+
+     span a:hover {
+        color:darkgray;
+        text-decoration: underline;
+      }
+
+      .apps {
+      width:40px;
+      float:right;
+      cursor:pointer;
+      position: absolute;
+      margin-top:-10px;
+      margin-right:10px;
+    }
+
+    .btnsignin {
+      height: 30px;
+      width:70px;
+      border-radius:2px;
+      border:none;
+      cursor:pointer;
+      background-color: #4285F4;
+      color:white;
+      margin-left:50px;
+      outline:none;
+      font-weight: 600;
+    }
+
+    .btnsignin:active{
+      height: 30px;
+      width:70px;
+      border-radius:2px;
+      border:none;
+      cursor:pointer;
+      background-color:darkblue;
+      color:white;
+      margin-left:50px;
+      outline:none;
+    }
+
+
+     .logoimage {
+       width:280px;
+     }
+
+/* 검색창 */
+
+     .container {
+      margin-top: 100px;
+      display:flex;
+      justify-content:center;
+    }
+
+    .search_parent {
+      display: flex;
+      justify-content:center;
+    }
+
+    .searchbar {
+      display:flex;
+    }
+
+
+    .search_background {
+      width: 600px;
+      height: 40px;
+      margin: 30px 100px;
+      border-radius: 20px;
+      box-shadow: rgba(32, 33, 36, 0.28) 0px 1px 6px 0px;
+      border:none;
+      text-decoration:none;
+      outline:none;
+    }
+
+    .search_input{
+      width: 500px;
+      height: 30px;
+      margin:3px 20px;
+      border:none;
+      text-decoration:none;
+      outline:none;
+    }
+
+
+
+/* 검색창 아이콘 */
+
+   .fa-search {
+     color:darkgray;
+    }
+
+   .fa-microphone {
+     color: #4285F4;
+    }
+
+   .searchicon {
+     display:inline-block;
+     margin-left: 15px;
+     margin-top: 10px;
+   }
+
+   .micicon {
+     display:inline-block;
+     margin-top: 10px;
+     margin-right: 15px;
+   }
+
+
+/* 검색창 하단 버튼 */
+
+    .btncss {
+      margin-right:10px;
+    }
+
+    .btn-default{
+      height: 40px;
+      width:140px;
+      border-radius:6px;
+      border:none;
+      cursor:pointer;
+      outline:none;
+    }
+
+
+    .btnall {
+      display:flex;
+      justify-content:center;
+    }
+
+    .btn-default:hover {
+      border:1px solid lightgray;
+    }
+
+/*  언어 선택 */
+
+    .language{
+      display:flex;
+      justify-content:center;
+      margin-top:30px;
+    }
+
+    .languagelink {
+      text-decoration:none;
+      padding-left:10px;
+      color:darkblue;
+    }
+
+    .languagelink:hover {
+      color:darkblue;
+      text-decoration: underline;
+    }
+
+
+    </style>
+  </head>
+
+  <body>
+    <nav class="navi">
+      <div class="navilinks">
+      <span><a href="#">Gmail</a></span>
+      <span><a href="#">Images</a></span>
+      <span><img class="apps" src="googleapp.png"></span>
+      <span><input class= "btnsignin" type="submit" name="submit" value="Sign in"></span>
+    </nav>
+
+  <main>
+    <div class="container">
+      <img class="logoimage" src="googlelogo.png">
+    </div>
+
+  <div class="search_parent">
+    <form class="search_background" action="https://www.google.com/search" method="get">
+    <div class="searchbar">
+       
+      <div class="searchicon">
+         <span><i class="fas fa-search"></i></span>
+       </div>
+
+       <input class="search_input" type="text" name="search">
+
+       <div class="micicon">
+        <span><i class="fas fa-microphone"></i></span>
+       </div>
+
+    </div>
+    </form>
+  </div>
+
+<div class="btnall">
+    <div class="btncss">
+      <input class= "btn-default" type="submit" name="submit" value="Google Search">
+    </div>
+
+    <div class="btn2">
+      <input class= "btn-default" type="submit" name="submit" value="I'm Felling Lucky">
+    </div>
+  </div>
+
+</main>
+
+  <div class="language">
+   <p>Google offered in:  <a class="languagelink" href="https://www.google.com/#spf=1598414460321"> 한국어</a></p>
+  </div>
+
+  </body>
+</html>
